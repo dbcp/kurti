@@ -1,0 +1,73 @@
+<div role="main" class="container theme-showcase">
+    <div class="" style="width:100%">
+        <div  class='floatLeft' style="width:100%">
+
+            <!--                    <div class='floatLeft' ng-click="showCategorySearch()">search</div>
+                                <div class='clearfix'></div>-->
+            <div class='floatRight' style='margin-top: -40px;width: 100px;margin-right: 3px;position: fixed;right:0px;z-index: 3001;'>
+                <div><a href="/banglafab/index.html" class="btn btn-info" role="button">Home</a></div>
+            </div>
+            <div class="firstParentDiv floatLeft row">
+                <div class='col-sm-12 col-xs-12 col-md-12 floatLeft center cutout needed' style="position: relative;">
+                    <div style='position: relative;height: 75px'>
+                        <div class='pagePrev' ng-click="moveRight()" ng-show="noOfPages > 6"></div>
+                        <div class='paginationParent'>
+                            <div class='paginationSubParent'>
+                                <ul ng-repeat="n in []| range:noOfPages" class="pagination1">
+                                    <li ng-click='updateIndex(n + 1)' ng-class="{'active': $index === 0}"><a href="#home/{{nav}}">{{n + 1}}</a></li>                               
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='pageNext' ng-click="moveLeft()" ng-show="noOfPages > 6"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+            <div class='main'>
+                <div ng-repeat="x in filteredSearchData| filter: {'serachTag': searchItemModel} | startFrom:beginIndex | limitTo:10" class='currentImage'>
+                    <div id="path" class='row'>
+                        <div style="width: 100%;height: 100%;" class='row'> 
+                            <img ng-src='{{x.path[0]}}' class='smallImage img-responsive center-block' ng-click="zoom(x, $index, $event)">
+                        </div>
+                        <div class='patchThumbnail'>
+                            <div ng-repeat = "p in x.path">
+                                <img ng-src = '{{p}}' class='thumbnail img-responsive' ng-click="thumbNailClick(p, $index, $event)">
+                            </div>
+                            <div id='whtsapp' ng-click="share($event)" ng-hide="true"><a data-action="share/whatsapp/share" href=""><img src="images/Whatsapp-48.png" /></a></div>
+
+                        </div>
+                        <div ng-hide="true" class='content'>{{x.path}}</div>
+                    </div>
+                    <!--                            <div>{{$index}}</div>-->
+                    <!--                            <hr/>-->
+                </div>
+            </div>
+
+            <!--                        <div class='col-sm-12 col-xs-12 col-md-12'>
+                                        <ul ng-repeat="n in []| range:noOfPages" class="pagination">
+                                            <li ng-click='updateIndex(n + 1)'><a href="#">{{n + 1}}</a></li>                               
+                                        </ul>
+                                    </div>-->
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="SecondParentDiv floatLeft">
+    <!--            <input type="button"  class="btn btn-primary" value="Print Image" id="btnPrint" ng-click='print()'/>-->
+    <div class='imageClose' ng-click="closeImage()">X</div>
+    <div class='leftPanel floatLeft'><div  ng-click="prevImage()" class='prev'></div></div>
+    <div class='zommImageParent floatLeft row '>
+        <img class='zoomImage center-block'/>
+        <div class='zoomPatch' >
+            <div ng-repeat='i in imageArray track by $index' class='structureImages'>
+                <img ng-src = '{{i}}' class='zoomThumb img-responsive' ng-click="zoomReplicate(i)"/>
+            </div>
+        </div>
+    </div>
+    <div class='rightPanel floatLeft'><div  ng-click="nextImage()" class='next'></div></div>
+    <div class='dummyDiv'></div>
+</div>

@@ -1,0 +1,400 @@
+body{
+    margin:0;
+    padding:0px;
+    width:100%;
+    height:100%;
+    background-color: #859c07;
+}
+.zoomImage
+{       
+    width: auto;
+    height: auto;
+    /* margin-left: 35%; */
+    /* background-size: 100% 100%; */
+    max-width: 100%;
+    max-height: 100%;
+    /* background-size: contain; */
+}
+
+.SecondParentDiv{
+    position: absolute;
+    display:none;
+    background-image: url('../images/Transperent-Semi.png');
+    background-size: 100% 100%;
+    top: 0px;
+    width:100%;
+    height:100%;
+}   
+.firstParentDiv
+{
+    width: 100%;
+    /*    margin-top: 50px !important;*/
+    position: relative;
+}
+.zommImageParent
+{
+    /*    width: 1000px;*/
+    /*    height:600px;
+        overflow: scroll;*/
+    /*    border: 5px solid black;*/
+    margin-top: 50px;
+    background:rgba(204, 204, 204, 0.52);
+}
+.floatLeft
+{
+    float: left;
+}
+.floatRight
+{
+    float: right;
+}
+.leftPanel
+{
+    width: 10%;
+}
+.prev
+{
+    width: 50px;
+    height:50px;
+    background-image: url('../images/previous_n.jpg');
+    background-size: 100% 100%;
+    margin-top: 300px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.prev:hover
+{
+    background-image: url('../images/previous_o.jpg');
+
+}
+
+.rightPanel
+{
+    width: 10%;
+}
+.next{
+    width: 50px;
+    height:50px;
+    background-image: url('../images/next_n.jpg');
+    background-size: 100% 100%;
+    margin-top: 300px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.next:hover
+{
+    background-image: url('../images/next_o.jpg');
+
+}
+#path{
+    cursor: pointer;
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+.imageClose
+{
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    cursor: pointer;
+}
+.tabLocal{
+    margin-right: 10px;
+}
+
+.page-header
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#btnPrint{
+    position: absolute;
+    left: 46%;
+    top:1%;
+}
+li.active
+{
+    position: relative;
+    z-index: 0;
+}
+.paginationParent{
+    width: 216px;
+    overflow: hidden;
+    height: 75px;
+    position: absolute;
+    left: 69px;
+    // border: 1px solid red;
+
+}
+.paginationSubParent{
+    //width: 500px;
+    //border: 1px solid blue;
+    height: 75px;
+
+}
+.customPageNo{
+    height:20px;
+    width: 20px;
+    // border: 1px solid red;
+}
+.pagePrev
+{
+    width: 25px;
+    height:25px;
+    background-image: url('../images/previous_n.jpg');
+    background-size: 100% 100%;
+    margin-top: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 40px;
+}
+.pagePrev:hover
+{
+    background-image: url('../images/previous_o.jpg');
+
+}
+.pageNext{
+    width: 25px;
+    height:25px;
+    background-image: url('../images/next_n.jpg');
+    background-size: 100% 100%;
+    margin-top: 24px;
+    cursor: pointer;   
+    position: absolute;
+    left: 286px;
+}
+.pageNext:hover
+{
+    background-image: url('../images/next_o.jpg');
+
+}
+.currentImage 
+{
+    width: 20%;
+    /*    height: 248px;*/
+    height: auto;
+    /*    padding: 5px;*/
+    margin: 0;
+    margin-bottom: 10px;
+    background: #253120;
+    float: left;
+}
+
+.container{
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+.row
+{
+    margin: 0;
+}
+.cutout
+{
+    padding: 0;
+}
+.zommImageParent{
+    width:80%;
+    height:500px;
+    position: relative;
+    margin-top: 10%;
+}
+.thumbnail{
+    width: auto;
+    height: auto;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    padding: 0;
+    margin-bottom: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.smallImage
+{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height:auto;
+    /*    position: absolute;*/
+    /*    top: 11px;*/
+    left: 0px;
+}
+.patchThumbnail
+{
+    position: absolute;
+    /* right: 0px; */
+    /* top: 30px; */
+    width: 23%;
+    /* height: 50px; */
+    /* bottom: 0px; */
+    /* border: 1px solid red; */
+    left: 0;
+    top: 0px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid rgba(22, 52, 56, 0.41);
+}
+.zoomPatch
+{
+    /*    border: 1px solid red;*/
+    position: absolute;
+    bottom: 0;
+    /* height: 100px; */
+    width: 50px;
+    right: 0px;
+}
+
+.zoomThumb{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    /*    position: relative;*/
+}
+.structureImages
+{
+    height:100%;
+    width:100%;
+    margin-bottom: 10px;
+    /*    float: left;*/
+}
+.w3-section{
+    margin: 0 !important;
+}
+
+.pagination 
+{
+    width: 36px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    margin-top: 22px;
+}
+.pagination1 
+{
+    width: 36px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    margin-top: 23px;
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+}
+.pagination1 li.active
+{
+    color: white;
+}
+.pagination1 li a{
+    text-decoration: none;
+}
+.pagination1 li a:link {
+    /*    color: white;*/
+}
+
+/* visited link */
+.pagination1 li a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.pagination1 li a:hover {
+    color: white;
+}
+
+/* selected link */
+.pagination1 li a:active {
+    color: white;
+}
+.main{
+    position: relative;
+    /*    top: 73px;*/
+}
+.contact
+{
+    padding: 24px 18px;
+    color: white;
+}
+.w3-content
+{
+    width: 100%;
+    transform: translateX(34%);
+    margin-top: 8%;
+}
+.styling{
+    padding: 0 0 15px 0;
+}
+@media only screen and (max-width: 1024px) {
+    .currentImage {
+        width: 31%;
+        margin-bottom: 20px;
+        margin-right: 0%;
+        margin-left: 2%;        
+    }
+}
+@media only screen and (max-width: 500px) {
+    .currentImage {
+        width: 48%;
+        margin-bottom:10px;
+        margin-right: 1%;
+        margin-left: 1%;        
+    }
+    .leftPanel
+    {
+        width: 13%;
+
+    }
+    .rightPanel
+    {
+        width: 13%;
+    }
+    .prev {
+        width: 25px;
+        height: 25px;
+        margin: auto;
+        margin-top: 300px;
+    }
+    .next
+    {
+        width: 25px;
+        height: 25px;
+        margin: auto;
+        margin-top: 300px;
+    }
+    .zommImageParent
+    {
+        width:74%;
+        height:auto;
+        margin: auto;
+        margin-top: 20%;
+        position: relative;
+    }
+    .pageNext
+    {
+        margin-top:24px;  
+    }
+    .pagePrev
+    {
+        margin-top: 24px;  
+
+    }
+    .imageClose {
+        font-size: 25px;
+        position: absolute;
+        right: 15px;
+        top: 60px;
+        cursor: pointer;
+        z-index: 0;
+    }
+}
